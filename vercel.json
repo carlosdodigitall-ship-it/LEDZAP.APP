@@ -1,0 +1,12 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/cobrancas",
+      "schedule": "0 12 * * *"
+    },
+    {
+      "path": "/api/cron/whatsapp-agendamentos",
+      "schedule": "0 13 * * *"
+    }
+  ]
+}
