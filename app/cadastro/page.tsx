@@ -11,7 +11,7 @@ export default function Cadastro(){
  const [name,setName]=useState("");const [company,setCompany]=useState("");const [phone,setPhone]=useState("");const [email,setEmail]=useState("");const [password,setPassword]=useState("");const [showPassword,setShowPassword]=useState(false);const [error,setError]=useState("");const [success,setSuccess]=useState(false);const [loading,setLoading]=useState(false);
  async function handleSubmit(e:FormEvent<HTMLFormElement>){
   e.preventDefault();if(loading)return;setError("");
-  if(name.trim().length<2||company.trim().length<2||phone.replace(/\\D/g,"").length<10||password.length<8){setError("Confira seus dados. A senha deve ter pelo menos 8 caracteres.");return;}
+  if(name.trim().length<2||company.trim().length<2||phone.replace(/\D/g,"").length<10||password.length<8){setError("Confira seus dados. A senha deve ter pelo menos 8 caracteres.");return;}
   setLoading(true);
   try{
    const supabase=createClient();const cleanEmail=email.trim().toLowerCase();
