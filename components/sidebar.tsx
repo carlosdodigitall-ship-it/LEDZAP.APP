@@ -90,6 +90,8 @@ const navSections: NavSection[] = [
     items: [
       { key: "crm_dashboard", label: "Visão geral do CRM", href: "/crm/funil", icon: LayoutDashboard },
       { key: "crm_funil", label: "Funil de vendas", href: "/crm/funil", icon: Layers3 },
+      { key: "crm_automacoes", label: "Automações", href: "/crm/automacoes", icon: Sparkles },
+      { key: "crm_agendamentos", label: "Agendamentos WhatsApp", href: "/crm/agendamentos", icon: MessageCircle },
       { key: "crm_tarefas", label: "Tarefas e atividades", href: "/crm/tarefas", icon: Tag },
     ],
   },

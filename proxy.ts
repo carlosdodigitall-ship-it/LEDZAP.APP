@@ -22,6 +22,7 @@ export async function proxy(request: NextRequest) {
   const protectedRoute =
     path.startsWith("/admin") ||
     path.startsWith("/dashboard") ||
+    path.startsWith("/crm") ||
     path.startsWith("/assinatura") ||
     ["/clientes","/planos","/categorias","/cobrancas","/recorrencias","/financeiro","/whatsapp","/relatorios","/configuracoes"].some((p) => path.startsWith(p));
 
